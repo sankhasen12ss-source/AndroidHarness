@@ -293,7 +293,7 @@ class HttpRequestTool(
             "headers" to kotlinx.serialization.json.buildJsonObject {
                 put("type", "object")
                 put("description", "Request headers as key/value pairs.")
-                putJsonObject("additionalProperties") { put("type", "string") }
+    
             },
             "body" to Schema.string("Request body (for POST/PUT/PATCH)."),
             "content_type" to Schema.string("Body content type. Defaults to application/json."),
